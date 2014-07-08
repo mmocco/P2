@@ -13,14 +13,27 @@ ini_set('display_errors', 0);
 	<?php require 'passbrain.php'; ?> 
 
 </head>
-<body class= "center">
-	<form action ='passwordgen.php' method= 'POST'>
+<body>
 
-	<p>    </p>
+	<p class = 'password'> <?php echo $pass ?> </p>
+
+
+	<form action ='passwordgen.php' method= 'POST'>
+	<div class = 'center'>	
+
+		<p class='img'>
+			<a href='http://xkcd.com/936/'>xkcd password strength</a><br>
+		
+			<a href='http://xkcd.com/936/'><img class='comic' src='http://imgs.xkcd.com/comics/password_strength.png' alt='xkcd style passwords'></a>
+			<br>
+		</p>
+
+
+
+        <H1 class = "check">An ideal password does not contain more than 5 words </H1> 
 <!-- Landing page includes a description of your app and what a xkcd password is (assume an unfamiliar audience).
 		put input form here -->	
-        An ideal password does not contain more than 5 words <br>
-	<input type = 'text' name = 'words' placeholder = '  # of words in password'><br> <br>
+	<input type = 'text' class= "check"  name = 'words' placeholder = '  # of words in password'><br> <br>
 
 	<input type="checkbox" name="number" value="t" class ="check">Should your password include a number?<br>
 	<input type="checkbox" name="symbol" value="t" class ="check">Should your password include symbols?<br> 
@@ -28,8 +41,7 @@ ini_set('display_errors', 0);
 Generate! <input type="submit">
 
 	</form>
-
-                 <p> your password:  </p> <?php echo $pass; ?> <br>	
+	<div>
 	
 
 </body>

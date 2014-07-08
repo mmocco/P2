@@ -2,14 +2,33 @@
 
 	body 
 	{
+		left-margin:20px;
 		background-color:yellow;
+		text-align: center;
 	}
 	
 	.center {	
 
-    margin: 85px;
-    padding: 85px;
+    margin: 20px;
+    padding: 20px;
+	}	
+	.comic {
+		width:75%;
+		max-width:500px;
+		}
 
-
-
+	.img {
+		}
+	.check {
 	}
+		.password {
+			text-align:center;
+			font-size:3rem;
+			margin-bottom:25px;
+			color:#f39c12;
+			font-family:consolas,courier;
+			background-color:#eee;
+			display:inline-block;
+			padding:15px;
+			font-weight:800;
+		}
