@@ -6,8 +6,8 @@
 
 
 	$pick = rand(0,20);
-	$password = "";
-	$picked = "";
+#	$password = "";
+#	$picked = "";
 	$j = 0;
 	
 
@@ -16,4 +16,4 @@
 
 	$pick = rand(0,20);
 	$j++;
-	}
+
