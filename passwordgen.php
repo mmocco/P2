@@ -1,3 +1,8 @@
+<?php
+error_reporting(-1);
+ini_set('display_errors', 0);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,23 +14,22 @@
 
 </head>
 <body class= "center">
-	<form action ='passbrain.php' method= 'POST'>
+	<form action ='passwordgen.php' method= 'POST'>
 
 	<p>    </p>
 <!-- Landing page includes a description of your app and what a xkcd password is (assume an unfamiliar audience).
 		put input form here -->	
-        <input type = 'text' name = 'in1' ><br> How many words do you want in your password?<br>
+        An ideal password does not contain more than 5 words <br>
+	<input type = 'text' name = 'words' placeholder = '  # of words in password'><br> <br>
 
-	<input type="checkbox" name="number" value="false" class ="check">Should your password include a number?<br>
-	<input type="checkbox" name="symbol" value="false" class ="check">Should your password include symbols?<br> 
-	<input type="checkbox" name="case" value="false" class = "check">Should your passworf have an UPPER CASE first letter?<br>
-Generate! <input type="submit"">
-
-</form>
+	<input type="checkbox" name="number" value="t" class ="check">Should your password include a number?<br>
+	<input type="checkbox" name="symbol" value="t" class ="check">Should your password include symbols?<br> 
+	<input type="checkbox" name="case" value="t" class = "check">Should your password have an UPPER CASE first letter?<br>
+Generate! <input type="submit">
 
 	</form>
 
-	
+                 <p> your password:  </p> <?php echo $pass; ?> <br>	
 	
 
 </body>
