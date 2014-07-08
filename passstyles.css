@@ -2,6 +2,14 @@
 
 	body 
 	{
-		background-color:#2c87c8;
+		background-color:#grey;
 	}
+	
+	.center {	
 
+    margin: 85px;
+    padding: 85px;
+
+
+
+	}
