@@ -18,7 +18,7 @@ ini_set('display_errors', 0);
 	<p class = 'password'> <?php echo $pass ?> </p>
 
 
-	<form action ='passwordgen.php' method= 'POST'>
+	<form action ='index.php' method= 'POST'>
 	<div class = 'center'>	
 
 		<p class='img'>
